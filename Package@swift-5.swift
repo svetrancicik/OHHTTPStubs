@@ -1,10 +1,14 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "OHHTTPStubs",
     platforms: [
-        .macOS(.v10_10), .iOS(.v9), .watchOS(.v2), .tvOS(.v9)
+        .macOS(.v13),
+        .iOS(.v12),
+        .watchOS(.v4),
+        .tvOS(.v12),
+        .visionOS(.v1)
     ],
     products: [
         .library(
